@@ -1,0 +1,14 @@
+TITLE:	Example of second order factor analysis with Mplus
+  !Adapted from https://www.statmodel.com/usersguide/chapter5.shtml
+  !Step : Second Order Result
+  DATA:	FILE IS ex5.6.dat;
+  VARIABLE:	NAMES ARE y1-y12;
+  MODEL:	f1 BY y1-y3;
+  	f2 BY y4-y6;
+  	f3 BY y7-y9;
+  	f4 BY y10-y12;
+    f5 BY f1-f2;
+    f6 BY f3-f4
+
+
+ Output: Standardized Sampstat tech1 tech4 ;
