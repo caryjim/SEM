@@ -1,0 +1,628 @@
+
+                           L I S R E L  10.2 (STUDENT)
+
+                                       BY
+
+                         Karl G. Jöreskog & Dag Sörbom
+
+
+
+                    This program is published exclusively by
+                    Scientific Software International, Inc.
+                         http://www.ssicentral.com
+
+        Copyright by Scientific Software International, Inc., 1981-2019
+          Use of this program is subject to the terms specified in the
+                        Universal Copyright Convention.
+
+ 
+ SEM Class Presentation TWO_Order_Factor_Model
+ DA NI=12 NO=500 MA=CM
+ CM SY
+ 1.725
+ 1.044         1.047
+ 0.920         0.705         0.936
+ 0.441         0.345         0.322         1.815
+ 0.322         0.226         0.167         1.041         1.015
+ 0.305         0.235         0.208         1.017         0.735         1.047
+ 0.575         0.377         0.291         0.543         0.367         0.376         1.889
+ 0.400         0.238         0.202         0.388         0.254         0.280         1.137         1.080
+ 0.419         0.300         0.224         0.362         0.242         0.290         1.117         0.785         1.049
+ 0.396         0.319         0.253         0.388         0.272         0.211         0.478         0.306         0.317         1.913
+ 0.314         0.253         0.187         0.255         0.167         0.157         0.338         0.222         0.218         1.152         1.119
+ 0.308         0.267         0.203         0.220         0.149         0.140         0.335         0.207         0.243         1.036         0.770         1.018
+ LA
+ 'Y1' 'Y2' 'Y3' 'Y4' 'Y5' 'Y6' 'Y7' 'Y8' 'Y9' 'Y10' 'Y11' 'Y12'
+ MO NK=2 NY=12 NE=4 LY=FU,FI TE=DI GA=FU,FI PS=DI PH=ST
+ LK
+ f5 f6
+ LE
+ f1 f2 f3 f4
+ va 1.0 LY(1,1) LY(4,2) LY(7,3)LY(10,4)
+ FR LY(2,1) LY(3,1) LY(5,2) LY(6,2) LY(8,3) LY(9,3) LY(11,4) LY(12,4)
+ va 1.0 GA(1,1) GA(3,2)
+ FR GA(2,1) GA(4,2)
+ PATH DIAGRAM
+ OU rs sc nd=3 it=1000
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+                           Number of Input Variables 12
+                           Number of Y - Variables   12
+                           Number of X - Variables    0
+                           Number of ETA - Variables  4
+                           Number of KSI - Variables  2
+                           Number of Observations   500
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+         Covariance Matrix       
+
+                  Y1         Y2         Y3         Y4         Y5         Y6   
+            --------   --------   --------   --------   --------   --------
+       Y1      1.725
+       Y2      1.044      1.047
+       Y3      0.920      0.705      0.936
+       Y4      0.441      0.345      0.322      1.815
+       Y5      0.322      0.226      0.167      1.041      1.015
+       Y6      0.305      0.235      0.208      1.017      0.735      1.047
+       Y7      0.575      0.377      0.291      0.543      0.367      0.376
+       Y8      0.400      0.238      0.202      0.388      0.254      0.280
+       Y9      0.419      0.300      0.224      0.362      0.242      0.290
+      Y10      0.396      0.319      0.253      0.388      0.272      0.211
+      Y11      0.314      0.253      0.187      0.255      0.167      0.157
+      Y12      0.308      0.267      0.203      0.220      0.149      0.140
+
+         Covariance Matrix       
+
+                  Y7         Y8         Y9        Y10        Y11        Y12   
+            --------   --------   --------   --------   --------   --------
+       Y7      1.889
+       Y8      1.137      1.080
+       Y9      1.117      0.785      1.049
+      Y10      0.478      0.306      0.317      1.913
+      Y11      0.338      0.222      0.218      1.152      1.119
+      Y12      0.335      0.207      0.243      1.036      0.770      1.018
+
+ Total Variance = 15.653 Generalized Variance = 0.00497                                 
+
+ Largest Eigenvalue = 6.063 Smallest Eigenvalue = 0.239                                   
+
+ Condition Number = 5.034
+
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+ Parameter Specifications
+
+         LAMBDA-Y    
+
+                  f1         f2         f3         f4
+            --------   --------   --------   --------
+       Y1          0          0          0          0
+       Y2          1          0          0          0
+       Y3          2          0          0          0
+       Y4          0          0          0          0
+       Y5          0          3          0          0
+       Y6          0          4          0          0
+       Y7          0          0          0          0
+       Y8          0          0          5          0
+       Y9          0          0          6          0
+      Y10          0          0          0          0
+      Y11          0          0          0          7
+      Y12          0          0          0          8
+
+         GAMMA       
+
+                  f5         f6
+            --------   --------
+       f1          0          0
+       f2          9          0
+       f3          0          0
+       f4          0         10
+
+         PHI         
+
+                  f5         f6
+            --------   --------
+       f5          0
+       f6         11          0
+
+         PSI         
+
+                  f1         f2         f3         f4
+            --------   --------   --------   --------
+                  12         13         14         15
+
+         THETA-EPS   
+
+                  Y1         Y2         Y3         Y4         Y5         Y6
+            --------   --------   --------   --------   --------   --------
+                  16         17         18         19         20         21
+
+         THETA-EPS   
+
+                  Y7         Y8         Y9        Y10        Y11        Y12
+            --------   --------   --------   --------   --------   --------
+                  22         23         24         25         26         27
+ 
+
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+ Number of Iterations = 30          
+
+ LISREL Estimates (Maximum Likelihood)                           
+
+         LAMBDA-Y    
+
+                  f1         f2         f3         f4   
+            --------   --------   --------   --------
+       Y1      1.000       - -        - -        - - 
+ 
+       Y2      0.737       - -        - -        - - 
+             (0.027)
+              27.772
+ 
+       Y3      0.649       - -        - -        - - 
+             (0.026)
+              24.932
+ 
+       Y4       - -       1.000       - -        - - 
+ 
+       Y5       - -       0.718       - -        - - 
+                        (0.029)
+                         24.493
+ 
+       Y6       - -       0.704       - -        - - 
+                        (0.030)
+                         23.400
+ 
+       Y7       - -        - -       1.000       - - 
+ 
+       Y8       - -        - -       0.695       - - 
+                                   (0.024)
+                                    28.866
+ 
+       Y9       - -        - -       0.685       - - 
+                                   (0.024)
+                                    28.879
+ 
+      Y10       - -        - -        - -       1.000
+ 
+      Y11       - -        - -        - -       0.743
+                                              (0.029)
+                                               25.673
+ 
+      Y12       - -        - -        - -       0.670
+                                              (0.028)
+                                               23.828
+ 
+
+         GAMMA       
+
+                  f5         f6   
+            --------   --------
+       f1      1.000       - - 
+ 
+       f2      0.628       - - 
+             (0.070)
+               9.010
+ 
+       f3       - -       1.000
+ 
+       f4       - -       0.593
+                        (0.072)
+                          8.224
+ 
+
+         Covariance Matrix of ETA and KSI        
+
+                  f1         f2         f3         f4         f5         f6   
+            --------   --------   --------   --------   --------   --------
+       f1      1.675
+       f2      0.628      1.493
+       f3      0.808      0.507      1.812
+       f4      0.479      0.301      0.593      1.583
+       f5      1.000      0.628      0.808      0.479      1.000
+       f6      0.808      0.507      1.000      0.593      0.808      1.000
+
+         PHI         
+
+                  f5         f6   
+            --------   --------
+       f5      1.000
+ 
+       f6      0.808      1.000
+             (0.066)
+              12.304
+ 
+
+         PSI         
+         Note: This matrix is diagonal.
+
+                  f1         f2         f3         f4   
+            --------   --------   --------   --------
+               0.675      1.098      0.812      1.231
+             (0.108)    (0.105)    (0.115)    (0.113)
+               6.240     10.435      7.070     10.882
+ 
+
+         Squared Multiple Correlations for Structural Equations  
+
+                  f1         f2         f3         f4   
+            --------   --------   --------   --------
+               0.597      0.264      0.552      0.222
+
+         THETA-EPS   
+
+                  Y1         Y2         Y3         Y4         Y5         Y6   
+            --------   --------   --------   --------   --------   --------
+               0.328      0.259      0.325      0.366      0.267      0.329
+             (0.042)    (0.026)    (0.026)    (0.044)    (0.026)    (0.028)
+               7.830     10.022     12.478      8.252     10.299     11.666
+ 
+
+         THETA-EPS   
+
+                  Y7         Y8         Y9        Y10        Y11        Y12   
+            --------   --------   --------   --------   --------   --------
+               0.266      0.286      0.277      0.364      0.265      0.323
+             (0.038)    (0.025)    (0.024)    (0.045)    (0.027)    (0.027)
+               6.983     11.560     11.550      8.149      9.799     12.017
+ 
+
+         Squared Multiple Correlations for Y - Variables         
+
+                  Y1         Y2         Y3         Y4         Y5         Y6   
+            --------   --------   --------   --------   --------   --------
+               0.836      0.778      0.684      0.803      0.743      0.692
+
+         Squared Multiple Correlations for Y - Variables         
+
+                  Y7         Y8         Y9        Y10        Y11        Y12   
+            --------   --------   --------   --------   --------   --------
+               0.872      0.754      0.754      0.813      0.767      0.688
+
+                                 Log-likelihood Values
+
+                        Estimated Model          Saturated Model
+                        ---------------          ---------------
+ Number of free parameters(t)        27                       78
+ -2ln(L)                       3414.371                 3348.253
+ AIC (Akaike, 1974)*           3468.371                 3504.253
+ BIC (Schwarz, 1978)*          3582.165                 3832.992
+
+*LISREL uses AIC= 2t - 2ln(L) and BIC = tln(N)- 2ln(L)
+
+
+                           Goodness-of-Fit Statistics
+
+ Degrees of Freedom for (C1)-(C2)                      51
+ Maximum Likelihood Ratio Chi-Square (C1)              66.118 (P = 0.0757)
+ Browne's (1984) ADF Chi-Square (C2_NT)                65.219 (P = 0.0870)
+ 
+ Estimated Non-centrality Parameter (NCP)              15.118
+ 90 Percent Confidence Interval for NCP                (0.0 ; 40.221)
+ 
+ Minimum Fit Function Value                            0.132
+ Population Discrepancy Function Value (F0)            0.0302
+ 90 Percent Confidence Interval for F0                 (0.0 ; 0.0804)
+ Root Mean Square Error of Approximation (RMSEA)       0.0243
+ 90 Percent Confidence Interval for RMSEA              (0.0 ; 0.0397)
+ P-Value for Test of Close Fit (RMSEA < 0.05)          0.998
+ 
+ Expected Cross-Validation Index (ECVI)                0.240
+ 90 Percent Confidence Interval for ECVI               (0.210 ; 0.290)
+ ECVI for Saturated Model                              0.312
+ ECVI for Independence Model                           8.073
+ 
+ Chi-Square for Independence Model (66 df)          4012.604
+ 
+ Normed Fit Index (NFI)                                0.984
+ Non-Normed Fit Index (NNFI)                           0.995
+ Parsimony Normed Fit Index (PNFI)                     0.760
+ Comparative Fit Index (CFI)                           0.996
+ Incremental Fit Index (IFI)                           0.996
+ Relative Fit Index (RFI)                              0.979
+ 
+ Critical N (CN)                                     585.076
+ 
+ 
+ Root Mean Square Residual (RMR)                       0.101
+ Standardized RMR                                      0.0700
+ Goodness of Fit Index (GFI)                           0.989
+ Adjusted Goodness of Fit Index (AGFI)                 0.983
+ Parsimony Goodness of Fit Index (PGFI)                0.647
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+         Fitted Covariance Matrix
+
+                  Y1         Y2         Y3         Y4         Y5         Y6   
+            --------   --------   --------   --------   --------   --------
+       Y1      2.004
+       Y2      1.234      1.169
+       Y3      1.087      0.801      1.030
+       Y4      0.628      0.463      0.407      1.859
+       Y5      0.451      0.332      0.293      1.072      1.038
+       Y6      0.442      0.326      0.287      1.050      0.755      1.069
+       Y7      0.808      0.595      0.524      0.507      0.364      0.357
+       Y8      0.561      0.413      0.364      0.352      0.253      0.248
+       Y9      0.553      0.407      0.359      0.347      0.250      0.245
+      Y10      0.479      0.353      0.311      0.301      0.216      0.212
+      Y11      0.356      0.262      0.231      0.223      0.161      0.157
+      Y12      0.321      0.236      0.208      0.202      0.145      0.142
+
+         Fitted Covariance Matrix
+
+                  Y7         Y8         Y9        Y10        Y11        Y12   
+            --------   --------   --------   --------   --------   --------
+       Y7      2.078
+       Y8      1.259      1.160
+       Y9      1.241      0.862      1.127
+      Y10      0.593      0.412      0.406      1.947
+      Y11      0.441      0.306      0.302      1.176      1.138
+      Y12      0.397      0.276      0.272      1.061      0.788      1.033
+
+         Fitted Residuals
+
+                  Y1         Y2         Y3         Y4         Y5         Y6   
+            --------   --------   --------   --------   --------   --------
+       Y1     -0.279
+       Y2     -0.190     -0.122
+       Y3     -0.167     -0.096     -0.094
+       Y4     -0.187     -0.118     -0.085     -0.044
+       Y5     -0.129     -0.106     -0.126     -0.031     -0.023
+       Y6     -0.137     -0.091     -0.079     -0.033     -0.020     -0.022
+       Y7     -0.233     -0.218     -0.233      0.036      0.003      0.019
+       Y8     -0.161     -0.175     -0.162      0.036      0.001      0.032
+       Y9     -0.134     -0.107     -0.135      0.015     -0.008      0.045
+      Y10     -0.083     -0.034     -0.058      0.087      0.056     -0.001
+      Y11     -0.042     -0.009     -0.044      0.032      0.006      0.000
+      Y12     -0.013      0.031     -0.005      0.018      0.004     -0.002
+
+         Fitted Residuals
+
+                  Y7         Y8         Y9        Y10        Y11        Y12   
+            --------   --------   --------   --------   --------   --------
+       Y7     -0.189
+       Y8     -0.122     -0.080
+       Y9     -0.124     -0.077     -0.078
+      Y10     -0.115     -0.106     -0.089     -0.034
+      Y11     -0.103     -0.084     -0.084     -0.024     -0.019
+      Y12     -0.062     -0.069     -0.029     -0.025     -0.018     -0.015
+
+ Summary Statistics for Fitted Residuals
+
+ Smallest Fitted Residual =   -0.279
+   Median Fitted Residual =   -0.060
+  Largest Fitted Residual =    0.087
+
+ Stemleaf Plot
+
+ - 2|8 
+ - 2|332 
+ - 1|9998766 
+ - 1|433332222211100 
+ - 0|99998888888766 
+ - 0|44433333222222221111000000 
+   0|112233344 
+   0|569
+
+         Standardized Residuals  
+
+                  Y1         Y2         Y3         Y4         Y5         Y6   
+            --------   --------   --------   --------   --------   --------
+       Y1     -2.201
+       Y2     -2.164     -1.645
+       Y3     -2.284     -1.934     -1.471
+       Y4     -2.062     -2.457     -1.379     -0.378
+       Y5     -2.045     -2.197     -2.595       - -      -0.392
+       Y6     -1.992     -1.781     -1.793     -0.426     -0.340     -0.321
+       Y7     -2.372     -3.228     -3.551      0.394      0.038      0.277
+       Y8     -2.216     -3.172     -3.376      0.537      0.027      0.628
+       Y9     -2.011     -2.078     -2.691      0.220     -0.193      0.873
+      Y10     -0.913     -0.490     -0.834      1.257      0.951     -0.012
+      Y11     -0.544     -0.171     -0.891      0.608      0.159     -0.006
+      Y12     -0.197      0.694     -0.124      0.293      0.088     -0.045
+
+         Standardized Residuals  
+
+                  Y7         Y8         Y9        Y10        Y11        Y12   
+            --------   --------   --------   --------   --------   --------
+       Y7     -1.438
+       Y8     -1.491     -1.092
+       Y9     -1.420     -1.221     -1.443
+      Y10     -1.228     -1.517     -1.295     -0.279
+      Y11     -1.466     -1.582     -1.590     -0.349     -0.266
+      Y12     -0.920     -1.098     -0.474     -0.286     -0.323     -0.247
+
+ Summary Statistics for Standardized Residuals
+
+ Smallest Standardized Residual =   -3.551
+   Median Standardized Residual =   -0.902
+  Largest Standardized Residual =    1.257
+
+ Stemleaf Plot
+
+ - 3|6 
+ - 3|422 
+ - 2|765 
+ - 2|43222211000 
+ - 1|9886665555 
+ - 1|444432211 
+ - 0|9998555 
+ - 0|444333333322221000000 
+   0|122334 
+   0|56679 
+   1|03
+ Largest Negative Standardized Residuals
+ Residual for       Y5 and       Y3  -2.595
+ Residual for       Y7 and       Y2  -3.228
+ Residual for       Y7 and       Y3  -3.551
+ Residual for       Y8 and       Y2  -3.172
+ Residual for       Y8 and       Y3  -3.376
+ Residual for       Y9 and       Y3  -2.691
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+                         Qplot of Standardized Residuals
+
+  3.5..........................................................................
+     .                                                                       ..
+     .                                                                      . .
+     .                                                                    .   .
+     .                                                                  .     .
+     .                                                                 .      .
+     .                                                               .        .
+     .                                                             .          .
+     .                                                 x          .           .
+     .                                                          .             .
+     .                                             x          .               .
+     .                                             x         .                .
+     .                                           x         .                  .
+     .                                          x        .                    .
+     .                                         xx       .                     .
+ N   .                                      xxx       .                       .
+ o   .                                    xxx       .                         .
+ r   .                                   **        .                          .
+ m   .                                 x*x       .                            .
+ a   .                                 *       .                              .
+ l   .                                xx      .                               .
+     .                               x*     .                                 .
+ Q   .                          *x  *     .                                   .
+ u   .                       x* x        .                                    .
+ a   .                    x*xx         .                                      .
+ n   .                    *          .                                        .
+ t   .                  x*x         .                                         .
+ i   .               * *          .                                           .
+ l   .              xx          .                                             .
+ e   .             x           .                                              .
+ s   .           x*          .                                                .
+     .        x x          .                                                  .
+     .       x            .                                                   .
+     .  x               .                                                     .
+     .  x             .                                                       .
+     .x              .                                                        .
+     .             .                                                          .
+     x           .                                                            .
+     .          .                                                             .
+     .        .                                                               .
+     .      .                                                                 .
+     .     .                                                                  .
+     .   .                                                                    .
+     . .                                                                      .
+ -3.5..........................................................................
+   -3.5                                                                      3.5
+                             Standardized Residuals
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+ Standardized Solution           
+
+         LAMBDA-Y    
+
+                  f1         f2         f3         f4   
+            --------   --------   --------   --------
+       Y1      1.294       - -        - -        - - 
+       Y2      0.954       - -        - -        - - 
+       Y3      0.840       - -        - -        - - 
+       Y4       - -       1.222       - -        - - 
+       Y5       - -       0.878       - -        - - 
+       Y6       - -       0.860       - -        - - 
+       Y7       - -        - -       1.346       - - 
+       Y8       - -        - -       0.935       - - 
+       Y9       - -        - -       0.922       - - 
+      Y10       - -        - -        - -       1.258
+      Y11       - -        - -        - -       0.934
+      Y12       - -        - -        - -       0.843
+
+         GAMMA       
+
+                  f5         f6   
+            --------   --------
+       f1      0.773       - - 
+       f2      0.514       - - 
+       f3       - -       0.743
+       f4       - -       0.472
+
+         Correlation Matrix of ETA and KSI       
+
+                  f1         f2         f3         f4         f5         f6   
+            --------   --------   --------   --------   --------   --------
+       f1      1.000
+       f2      0.397      1.000
+       f3      0.463      0.308      1.000
+       f4      0.294      0.196      0.350      1.000
+       f5      0.773      0.514      0.600      0.381      1.000
+       f6      0.624      0.415      0.743      0.472      0.808      1.000
+
+         PSI         
+         Note: This matrix is diagonal.
+
+                  f1         f2         f3         f4   
+            --------   --------   --------   --------
+               0.403      0.736      0.448      0.778
+
+ SEM Class Presentation TWO_Order_Factor_Model                                  
+
+ Completely Standardized Solution
+
+         LAMBDA-Y    
+
+                  f1         f2         f3         f4   
+            --------   --------   --------   --------
+       Y1      0.914       - -        - -        - - 
+       Y2      0.882       - -        - -        - - 
+       Y3      0.827       - -        - -        - - 
+       Y4       - -       0.896       - -        - - 
+       Y5       - -       0.862       - -        - - 
+       Y6       - -       0.832       - -        - - 
+       Y7       - -        - -       0.934       - - 
+       Y8       - -        - -       0.868       - - 
+       Y9       - -        - -       0.868       - - 
+      Y10       - -        - -        - -       0.902
+      Y11       - -        - -        - -       0.876
+      Y12       - -        - -        - -       0.829
+
+         GAMMA       
+
+                  f5         f6   
+            --------   --------
+       f1      0.773       - - 
+       f2      0.514       - - 
+       f3       - -       0.743
+       f4       - -       0.472
+
+         Correlation Matrix of ETA and KSI       
+
+                  f1         f2         f3         f4         f5         f6   
+            --------   --------   --------   --------   --------   --------
+       f1      1.000
+       f2      0.397      1.000
+       f3      0.463      0.308      1.000
+       f4      0.294      0.196      0.350      1.000
+       f5      0.773      0.514      0.600      0.381      1.000
+       f6      0.624      0.415      0.743      0.472      0.808      1.000
+
+         PSI         
+         Note: This matrix is diagonal.
+
+                  f1         f2         f3         f4   
+            --------   --------   --------   --------
+               0.403      0.736      0.448      0.778
+
+         THETA-EPS   
+
+                  Y1         Y2         Y3         Y4         Y5         Y6   
+            --------   --------   --------   --------   --------   --------
+               0.164      0.222      0.316      0.197      0.257      0.308
+
+         THETA-EPS   
+
+                  Y7         Y8         Y9        Y10        Y11        Y12   
+            --------   --------   --------   --------   --------   --------
+               0.128      0.246      0.246      0.187      0.233      0.312
+
+                           Time used 0.047 seconds
