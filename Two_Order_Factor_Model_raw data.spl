@@ -1,0 +1,19 @@
+ SEM Class Presentation TWO_Order_Factor_Model_Rawdata
+ DA NI=12 NO=500 MA=CM
+ RA FI=C:\Users\Acer\Desktop\ex5.6.dat
+ 
+ LA
+ 'Y1' 'Y2' 'Y3' 'Y4' 'Y5' 'Y6' 'Y7' 'Y8' 'Y9' 'Y10' 'Y11' 'Y12' 
+ 
+ MO NK=2 NY=12 NE=4 LY=FU,FI TE=DI GA=FU,FI PS=DI PH=ST
+ LK
+ f5 f6
+ LE
+ f1 f2 f3 f4
+
+ va 1.0 LY(1,1) LY(4,2) LY(7,3)LY(10,4)
+ FR LY(2,1) LY(3,1) LY(5,2) LY(6,2) LY(8,3) LY(9,3) LY(11,4) LY(12,4)
+ va 1.0 GA(1,1) GA(3,2)
+ FR GA(2,1) GA(4,2)
+ PATH DIAGRAM
+ OU rs sc nd=3 it=1000
