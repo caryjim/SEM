@@ -1,7 +1,7 @@
 # SEM
 This is a repository of LISREL and Mplus code of SEM analysis. 
 
-Project: Demonstrate high order factor model (Second order CFA model) 
+_Project_: Demonstrate high order factor model (Second order CFA model) 
 
 The original mplus code and data came from the mplus software website: http://www.statmodel.com/usersguide/chapter5.shtml
 
