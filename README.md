@@ -1,5 +1,5 @@
 # SEM
-This is a repository of LISREL and Mplus code of SEM analysis. 
+This is a repository of LISREL and Mplus code of Structural Equation Modeling (SEM) analysis. 
 
 Project: Demonstrate high order factor model (Second order CFA model) 
 
